@@ -16,6 +16,8 @@ class ProductCell: UICollectionViewCell {
     @IBOutlet var ProductImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
+            layer.borderColor = UIColor.black.withAlphaComponent(0.1).cgColor
+            layer.borderWidth = 1
    }
     
     func setProduct(productDetail: Product) {
